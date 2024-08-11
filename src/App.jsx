@@ -1,23 +1,26 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   const [color, setColor] = useState("linen")
-  const [text, setText] = useState("Black")
-
+  
+ 
+ 
   return (
     
       <div className='w-full h-screen duration-200'
       style={{backgroundColor : color }}>
         <h1 
-      class='font-black text-9xl transition-colors'>
-          hello ji</h1>
+      className="font-bold  text-9xl  ">
+          Hello Ji
+          </h1>
         <div className='fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2 '>
           <div className='flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl'>
             <button
-            onClick={(prev)=> setColor("Red") }
+            
+            onClick={()=> setColor("Red") }
             className='outline-none px-4 py-1 rounded-full text-white shadow-lg'
             style={{backgroundColor : "red"}}
             >Red</button>
